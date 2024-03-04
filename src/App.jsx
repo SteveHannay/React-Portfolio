@@ -3,11 +3,58 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
+import PortfolioCard from './components/PortfolioCard';
+import Wrapper1 from './components/Wrapper';
+import Title from './components/Title';
+
+import portfolioData from '../data/portfolio.json';
+import friendData from '../data/friends.json'
+
+
 function App() {
-  const [count, setCount] = useState(0)
+    
+  // Setting initial state to the portfolioData json array
+  
+
+  const [portfolio, setPortfolio] = useState(portfolioData);
+  const [friends, setFriends] = useState(friendData);
+
+  // Remove friend
+  const removeFriend = (id) => {
+    // Filter friends for friend objects with an id not equal to the id being removed
+    const newFriends = friends.filter((friend) => friend.id !== id);
+    // Set friends equal to the new friends array
+    setFriends(newFriends);
+  };
+  
+  // Remove Portfolio item
+  const removePortfolio = (id) => {
+    // Filter Portfolio for objects with an id not equal to the id being removed
+    const newPortfolio = portfolio.filter((item) => item.id !== id);
+    // Set Portfolio equal to the new friends array
+    setPortfolio(newPortfolio);
+    console.log("remove portfolio")
+  };
+  
+
+
 
   return (
     <>
+    <Wrapper1>
+      <Title>Portfolio</Title>
+      {friends.map((friend) => (
+        <PortfolioCard
+        // removeFriend={removeFriend}
+        id={friend.id}
+        key={friend.id}
+        name={friend.name}
+        image={friend.image}
+        occupation={friend.occupation}
+        location={friend.location}
+        />))}
+    </Wrapper1> 
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -16,20 +63,11 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }
 
 export default App
+
+
