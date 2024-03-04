@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
+    "name": "TEST NAME",
     "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
     "occupation": "Fry Cook",
     "location": "A Pineapple Under the Sea"
@@ -58,7 +58,7 @@
   {
     "id": 9,
     "name": "Tommy Pickles",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1032b378-9e4c-4e5b-9344-03d0fafe3154/dfeyh4p-3352bd44-c1e2-4c8b-99e3-352708acfe59.png/v1/fill/w_846,h_945/tommy_pickles__nh__vector_by_jack1set2_dfeyh4p-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE4MCIsInBhdGgiOiJcL2ZcLzEwMzJiMzc4LTllNGMtNGU1Yi05MzQ0LTAzZDBmYWZlMzE1NFwvZGZleWg0cC0zMzUyYmQ0NC1jMWUyLTRjOGItOTllMy0zNTI3MDhhY2ZlNTkucG5nIiwid2lkdGgiOiI8PTEwNTcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.CgUWq2xLuoVIiKsvdISbZgGYUrj6EbKxEH_CdsdPZao",
     "occupation": "Adventurer",
     "location": "California"
   },
@@ -72,7 +72,7 @@
   {
     "id": 11,
     "name": "Captain Planet",
-    "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
+    "image": "https://captainplanetfoundation.org/wp-content/uploads/CPF_Icon_WhiteRing-701x675.png",
     "occupation": "Superhero",
     "location": "Earth"
   },

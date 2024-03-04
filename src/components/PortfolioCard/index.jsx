@@ -20,7 +20,7 @@ function PortfolioCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removePortfolio(props.id)} className="remove">
+      <span onClick={() => props.removePortfolioItem(props.id)} className="remove">
         𝘅
       </span>
     </div>

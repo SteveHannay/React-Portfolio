@@ -4,54 +4,46 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 
 import PortfolioCard from './components/PortfolioCard';
+
 import Wrapper1 from './components/Wrapper';
 import Title from './components/Title';
 
 import portfolioData from '../data/portfolio.json';
-import friendData from '../data/friends.json'
+// import friendData from '../data/friends.json'
 
 
 function App() {
     
-  // Setting initial state to the portfolioData json array
-  
-
+  // Initialise state of the portfolioData json array
   const [portfolio, setPortfolio] = useState(portfolioData);
-  const [friends, setFriends] = useState(friendData);
 
-  // Remove friend
-  const removeFriend = (id) => {
-    // Filter friends for friend objects with an id not equal to the id being removed
-    const newFriends = friends.filter((friend) => friend.id !== id);
-    // Set friends equal to the new friends array
-    setFriends(newFriends);
-  };
-  
+  console.log("Data : ")
+  console.log(portfolio)
+
+
   // Remove Portfolio item
-  const removePortfolio = (id) => {
+  const removePortfolioItem = (id) => {
     // Filter Portfolio for objects with an id not equal to the id being removed
     const newPortfolio = portfolio.filter((item) => item.id !== id);
     // Set Portfolio equal to the new friends array
     setPortfolio(newPortfolio);
-    console.log("remove portfolio")
+    console.log("remove portfolio item")
   };
   
-
-
-
+  // Return HTML
   return (
     <>
     <Wrapper1>
       <Title>Portfolio</Title>
-      {friends.map((friend) => (
+      {portfolio.map((item) => (
         <PortfolioCard
-        // removeFriend={removeFriend}
-        id={friend.id}
-        key={friend.id}
-        name={friend.name}
-        image={friend.image}
-        occupation={friend.occupation}
-        location={friend.location}
+        removePortfolioItem={removePortfolioItem}
+        id={item.id}
+        key={item.id}
+        name={item.name}
+        image={item.image}
+        occupation={item.occupation}
+        location={item.location}
         />))}
     </Wrapper1> 
 
