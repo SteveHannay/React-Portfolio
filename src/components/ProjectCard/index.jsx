@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function PortfolioCard(props) {
+function ProjectCard(props) {
   return (
     <div className="card">
       <div className="img-container">
@@ -20,11 +20,11 @@ function PortfolioCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removePortfolioItem(props.id)} className="remove">
+      <span onClick={() => props.removeProject(props.id)} className="remove">
         𝘅
       </span>
     </div>
   );
 }
 
-export default PortfolioCard;
+export default ProjectCard;

@@ -1,0 +1,27 @@
+
+#navbarContent{
+  justify-content: right !important;
+}
+
+#mainNav {
+  background: #ECEFF1;
+  transition: all 0.35s;
+  font-weight: 200;
+  
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 12px;
+  letter-spacing: 2px;  
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: #2A77AE;
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+  background: #ECEFF1;
+}
