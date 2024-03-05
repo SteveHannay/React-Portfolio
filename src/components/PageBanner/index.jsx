@@ -11,8 +11,7 @@ function PageBanner(props) {
         <h2 className="">Welcome to my Portfolio page</h2>
         <img src= {profilePicture} alt="profile photo of Steven Hannay" width="200"/>
         <p>
-          This is what I have been learning at the Web Developer Skills Bootcamp<br />
-          Steven Hannay<br /><br />
+          This is what I have been learning at the Web Developer Skills Bootcamp
         </p>
       </div>
     </div>

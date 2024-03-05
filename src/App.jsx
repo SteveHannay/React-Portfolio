@@ -32,13 +32,19 @@ function App() {
     // Set new Projects array
     setProjects(newProjects);
   };
+
+  console.log(projectData)
+  
   
   // Return HTML
   return (
     <>
     <PageHeader></PageHeader>
 
+
+    <Wrapper>
     <PageNavbar></PageNavbar>
+    </Wrapper>
 
     <Wrapper>
       <PageBanner></PageBanner>
@@ -53,8 +59,9 @@ function App() {
         key={item.id}
         name={item.name}
         image={item.image}
-        occupation={item.occupation}
-        location={item.location}
+        description={item.description}
+        website={item.website}
+        github={item.github}
         />))}
     </Wrapper> 
 

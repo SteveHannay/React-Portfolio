@@ -10,13 +10,16 @@ function ProjectCard(props) {
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {props.name}
+            <strong>Project:</strong> {props.name}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Description:</strong> {props.description}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Website:</strong> {props.website}
+          </li>
+          <li>
+            <strong>github:</strong> {props.github}
           </li>
         </ul>
       </div>
