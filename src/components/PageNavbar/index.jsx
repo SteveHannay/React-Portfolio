@@ -7,13 +7,11 @@ function PageNavbar(props) {
   <nav className="navbar navbar-expand-lg bg-body-tertiar" id="mainNav">
     <div className="container-fluid">
 
-
-
       <div className="collapse navbar-collapse" id="navbarContent">
         <ul className="navbar-nav">
 
           <li className="nav-item">
-            <a className="nav-link" href="#work">Work</a>
+            <a className="nav-link" href="#projects">Projects</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#skills">Skills</a>

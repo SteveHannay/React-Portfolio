@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import reactLogo from '../assets/images/react.svg'
+import viteLogo from '../assets/images/vite.svg'
 import './App.css'
 
 import PageHeader from './components/PageHeader';
 import PageNavbar from './components/PageNavbar';
+import PageBanner from './components/PageBanner';
 
-import Wrapper1 from './components/Wrapper';
+import Wrapper from './components/Wrapper';
 import Title from './components/Title';
+
 import ProjectCard from './components/ProjectCard';
+
+import Skills from './components/Skills';
 
 import projectData from '../data/project.json';
 
@@ -34,9 +38,14 @@ function App() {
   return (
     <>
     <PageHeader></PageHeader>
+
     <PageNavbar></PageNavbar>
 
-    <Wrapper1>
+    <Wrapper>
+      <PageBanner></PageBanner>
+    </Wrapper>
+   
+    <Wrapper id ="projects">
       <Title>Projects</Title>
       {projects.map((item) => (
         <ProjectCard
@@ -48,7 +57,22 @@ function App() {
         occupation={item.occupation}
         location={item.location}
         />))}
-    </Wrapper1> 
+    </Wrapper> 
+
+    <Wrapper>
+      <Title>Skills</Title>
+      <Skills></Skills>
+    </Wrapper>
+
+    <Wrapper>
+      <Title>About Me</Title>
+      
+    </Wrapper>
+
+    <Wrapper>
+      <Title>Contact Me</Title>
+      
+    </Wrapper>
 
       <div>
         <a href="https://vitejs.dev" target="_blank">
