@@ -6,6 +6,7 @@ import './App.css'
 import PageHeader from './components/PageHeader';
 import PageNavbar from './components/PageNavbar';
 import PageBanner from './components/PageBanner';
+import PageFooter from './components/PageFooter';
 
 import Wrapper from './components/Wrapper';
 import Title from './components/Title';
@@ -13,6 +14,8 @@ import Title from './components/Title';
 import ProjectCard from './components/ProjectCard';
 
 import Skills from './components/Skills';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
 
 import projectData from '../data/project.json';
 
@@ -21,10 +24,6 @@ function App() {
     
   // Initialise state of the projectData json array
   const [projects, setProjects] = useState(projectData);
-
-  console.log("Data : ")
-  console.log(projects)
-
 
   // Remove item from Projects array
   const removeProject = (id) => {
@@ -66,12 +65,12 @@ function App() {
 
     <Wrapper>
       <Title>About Me</Title>
-      
+      <AboutMe></AboutMe>
     </Wrapper>
 
     <Wrapper>
       <Title>Contact Me</Title>
-      
+      <ContactMe></ContactMe>
     </Wrapper>
 
       <div>
@@ -82,6 +81,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
+    <PageFooter></PageFooter>
 
     </>
   )

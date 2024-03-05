@@ -4,7 +4,7 @@ import "./style.css";
 function Skills(props) {
   return (
 
-    <section className ="page-section" id ="skills">
+    <section className ="page-section">
     <p>
       These are some of the skills that I have learned at the Bootcamp 
     </p>
